@@ -1,4 +1,5 @@
-# Nuxt 3 Minimal Starter
+# Starter Nuxt Deluxe
+<img src='./project/status-update.png' />
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 

@@ -571,4 +571,5 @@ https://content.nuxtjs.org/
 
 
 
+<img src='./project/status-update.png' />
 
