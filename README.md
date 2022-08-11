@@ -1,6 +1,10 @@
 # Starter Nuxt Deluxe
 <img src='./project/status-update.png' />
 
+## Current status...
+
+<img src="./project/pinia-momo.png" width="48%" /> <img src="./project/pinia-momo-2.png" width="48%" />
+
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Setup

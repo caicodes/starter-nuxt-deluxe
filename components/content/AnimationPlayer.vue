@@ -1,7 +1,9 @@
 <template>
-    <div ref="box" class="bg-primary w-24 h-24 p-8 flex">box</div>
+    <div ref="box" class="w-24 h-24 flex ">
+        <img src="@/assets/images/momocycle.png" alt="" />
+    </div>
     <div class="btn-group rounded-full overflow-clip mx-auto">
-        <button @click="reSet" class="btn btn-secondary" id="play">reset</button>
+        <button @click="pauseIt" class="btn btn-secondary" id="play">pause</button>
         <button @click="sayHello" class="btn btn-secondary" id="pause">say hello</button>
         <button @click="raceOff" class="btn btn-secondary" id="resume">race Off</button>
         <button @click="driftOff" class="btn btn-secondary" id="resume">drift Off</button>
@@ -17,12 +19,14 @@ export default {
     name: "box",
     setup() {
         const box = ref()
-        const animation = gsap.timeline({ delay: 3, repeat: 2, repeatDelay: 1 })
+        const animation = gsap.timeline({ delay: 3, repeat: 3, repeatDelay: 1 })
 
         const sayHello = () => {
-            animation.to(box.value, { x: 0, rotation: "+=360" })
-            animation.to(box.value, { x: 0, rotation: "+=360" })
-            animation.to(box.value, { x: 0, rotation: "+=720" })
+            animation.resume()
+            animation.from(box.value, { x: -1000, duration: 1 })
+            animation.to(box.value, { x: 2000, duration: 2 })
+            animation.from(box.value, { x: -1000, duration: 2 })
+            animation.to(box.value, { x: 2000, duration: 2 })
         }
         const raceOff = () => {
             animation.to(box.value, { opacity: 1, x: 2000 })
@@ -30,9 +34,8 @@ export default {
         const driftOff = () => {
             animation.to(box.value, { opacity: 1, x: 2000, duration: 30 })
         }
-        const reSet = () => {
-            animation.seek(0)
-            animation.to(box.value, { opacity: 1, x: 0 })
+        const pauseIt = () => {
+            animation.pause()
         }
 
         onMounted(() => {
@@ -40,7 +43,7 @@ export default {
         })
 
         return {
-            box, sayHello, raceOff, driftOff, reSet
+            box, sayHello, raceOff, driftOff, pauseIt
         };
     },
 };

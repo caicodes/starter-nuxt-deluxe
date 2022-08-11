@@ -596,3 +596,34 @@ https://content.nuxtjs.org/
 I like 🍇 for gsap... 🍇GSAP 🦚
 
 
+## Update ~ Added Pinia 
+
+Easy drop in after the nuxt specific stuff was done, here's the procedure and final setup...
+
+```
+yarn add @pinia/nuxt 
+```
+
+then just added it to the modules export...
+
+nuxt.config.ts
+```javascript 
+  // note: colorModeModule was causing issues until extracted 
+  // then added as below... import colorModeModule from "@nuxtjs/color-mode";    
+   modules: [colorModeModule, "@nuxt/content", "@pinia/nuxt"],
+  // took 2 runs for nuxt to pickup on it then it was all good!
+```
+
+Animation Controls setup with a new component, `AnimationPlayer.vue`
+
+Gsap hello animation modified, controls rigged, added a momocycle png in the box... 
+
+It's going to be fun to explore 
+- motion on path
+- easing, fun effects, etc
+- getting menu fly ins, staggering, etc...
+- just getting started!
+
+## Current status...
+
+<img src="./project/pinia-momo.png" width="48%" /> <img src="./project/pinia-momo-2.png" width="48%" />
