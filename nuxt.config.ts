@@ -3,7 +3,7 @@ import colorModeModule from "@nuxtjs/color-mode";
 
 export default defineNuxtConfig({
   css: ["@/assets/css/tailwind.css"],
-  modules: [colorModeModule],
+  modules: [colorModeModule, "@nuxt/content"],
   colorMode: {
     dataValue: "theme",
   },

@@ -559,7 +559,14 @@ And soon I look to add:
 
 There will be many projects that this will be an ideal seed for! And regardless of whether they be heavy or light on the  `content` such as the text, labels, titles, etc... the next evolution of this project will be the implementation of a content system where the written content (variable) can be separated from as much markup as possible... the easy of maintaining and adding content when using markdown or outsite sources (headless cms) will be extremely useful... especially since this is a starter project! So... enter `@nuxtjs/content`
 
-### The Nuxt content option...
+### Project Status Update
+
+<img src='./project/status-update.png' />
+
+
+Next... content...
+
+### Nuxt Content 📘
 
 Optional but amazing in my opinion, the `@nuxt/content` module... this brings many content features and the ability to use `.md` and `.mdx` files and fully ***supercharge*** the content of the website! 
 
@@ -567,9 +574,25 @@ I struggled to get this configuration to work and spent a few hours and was extr
 
 https://content.nuxtjs.org/
 
+> keeping a running list of emojis :)
+> which are fun and helpful when you're 
+> in zen mode cruising thru docs, you can 
+> jump to your stuff visually, vis tags
+
+# 🕊gsap
+
+# 🦋flutter
+
+# 🏕googlefirebase
+
+# 🎯artascewebsites
 
 
 
+```
+👋 📘 📄 🌼 🍇 🦚 🕊
+```
 
-<img src='./project/status-update.png' />
+I like 🍇 for gsap... 🍇GSAP 🦚
+
 
