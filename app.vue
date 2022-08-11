@@ -5,6 +5,7 @@
       <div class="flex flex-col gap-8">
         <HelloDaisy />
         <HelloContent />
+        <AnimationPlayer />
         <ContentViewer />
       </div>
     </div>
@@ -13,4 +14,5 @@
 
 <script setup>
 import ContentViewer from '~~/components/content/Viewer.vue'
+import AnimationPlayer from '~~/components/content/AnimationPlayer.vue'
 </script>
