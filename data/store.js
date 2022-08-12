@@ -35,7 +35,12 @@ export const useTodosStore = defineStore({
         }, 100); // add a delay for yo spinnas beyatch
       });
     },
-    // updateTodo
+
+    deleteTodo(itemID) {
+      this.todos = this.todos.filter((object) => {
+        return object.id !== itemID;
+      });
+    },
   },
 });
 
