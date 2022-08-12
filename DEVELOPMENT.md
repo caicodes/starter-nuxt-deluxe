@@ -627,3 +627,89 @@ It's going to be fun to explore
 ## Current status...
 
 <img src="./project/pinia-momo.png" width="48%" /> <img src="./project/pinia-momo-2.png" width="48%" />
+
+One more pinia store before moving on, remember, everything has drop-in functionality in vue... nuxt, etc... so a built store to port around is perfect... todos give a perfect compliment to the usual `count` 
+
+### Todos setup
+
+1. create store
+2. 
+
+```javascript
+
+// simply added this to the main store.js @/data/store
+export const useTodosStore = defineStore({
+  id: "todos",
+  state: () => ({
+    todos: [
+      { id: 1, name: "first todo", completed: false },
+      { id: 2, name: "second todo", completed: true },
+    ],
+  }),
+});
+
+// then in HelloPinia.vue...
+<script setup>
+import { useTodosStore } from '../data/store'
+const storeTodos = useTodosStore()
+</script>
+
+// the template...
+
+  <ul>
+      <li v-for="todo in storeTodos.todos" :key="todo.id">
+           {{ todo.id }}: {{ todo.name }} - done? {{ todo.completed }}
+      </li>
+  </ul>
+
+```
+
+> the pinia store has been a breeze so far... love it!
+
+Now, for the full drop in ready `package`
+
+```
+1. store directory 
+2. store example drop in component
+3. fully illustrated examples in the docs/comments
+```
+
+```javascript
+
+
+// the contents...
+/data/store.js
+HelloPinia.vue
+README.md
+
+// for the archives...
+/pinia/
+  /data/
+  -  store/
+  HelloPinia.
+  README.md
+
+  ```
+
+> note:
+> 
+> that's the piece to bring in...
+> 
+> nuxt setup instructions
+> 
+> vue/vite setup instructions
+>
+
+
+## Next steps...
+
+- Firebase
+- Local storage
+- User settings...
+- Pages, auth routes
+- Admin
+- Middleware
+- api
+- mdx
+- 
+

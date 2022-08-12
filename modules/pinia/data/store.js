@@ -13,30 +13,10 @@ export const useTodosStore = defineStore({
       { id: 1, name: "first todo", completed: false },
       { id: 2, name: "second todo", completed: true },
       { id: 3, name: "third todo", completed: false },
-      { id: 4, name: "fourth todo", completed: true },
+      { id: 4, name: "fourth todo", completed: false },
       { id: 5, name: "fifth todo", completed: false },
     ],
   }),
-  getters: {
-    completedTodos: (state) => {
-      return state.todos.filter((todo) => todo.completed);
-    },
-  },
-  actions: {
-    async addTodo(name) {
-      new Promise((resolve, reject) => {
-        setTimeout(() => {
-          this.todos.push({
-            id: Math.random() * 1000,
-            name,
-            completed: false,
-          });
-          resolve();
-        }, 100); // add a delay for yo spinnas beyatch
-      });
-    },
-    // updateTodo
-  },
 });
 
 export const useCounterStore = defineStore({
