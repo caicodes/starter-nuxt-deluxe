@@ -713,3 +713,18 @@ README.md
 - mdx
 - 
 
+
+DEVNOTE - 
+
+> don't want to forget to setup tailwind for darkmode! comes in handy on a tweak.... didn't see why it wasn't working, need to get it in sync with how 
+> we're doing the dark mode classes... 
+
+And this is the code to get it sync'd 
+
+```javascript
+module.exports = {
+  darkMode: ['class', '[data-mode="dark"]'],
+  // ...
+}
+
+```

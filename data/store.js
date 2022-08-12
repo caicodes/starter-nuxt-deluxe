@@ -35,8 +35,8 @@ export const useTodosStore = defineStore({
         }, 100); // add a delay for yo spinnas beyatch
       });
     },
-
     deleteTodo(itemID) {
+      console.log("yo delete");
       this.todos = this.todos.filter((object) => {
         return object.id !== itemID;
       });
@@ -50,7 +50,6 @@ export const useCounterStore = defineStore({
     count: 0,
     title: "yo pinia yo",
   }),
-
   getters: {
     oddOrEven: (state) => {
       if (state.count % 2 === 0) return "even";

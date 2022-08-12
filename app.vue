@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <ColormodeSettings />
-    <div class="h-screen grid place-items-center justify-center text-center">
+    <div class="flex justify-center text-center">
       <div class="flex flex-col gap-8">
         <HelloDaisy />
         <HelloPinia />
@@ -15,6 +15,6 @@
 
 <script setup>
 import ContentViewer from '~~/components/content/Viewer.vue'
-import AnimationPlayer from '~~/components/content/AnimationPlayer.vue'
+import AnimationPlayer from '~~/components/animation/AnimationPlayer.vue'
 import HelloPinia from '~~/components/HelloPinia.vue';
 </script>
